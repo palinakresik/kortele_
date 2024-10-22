@@ -60,19 +60,35 @@ body, html {
     justify-content: center;
 }
 
-
+input[type="text"],
+select,
+textarea {
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: left;
+    height: 50px;
+    color: lightgray;
+}
 
 .number input {
     width: 100%;
-    /* Full width */
+
     padding: 10px;
     font-size: 16px;
     border: 2px solid lightgrey;
     border-radius: 5px;
     box-sizing: border-box;
     background-color: #ffffff;
-    color: #333 !important; 
+    color: rgb(220, 220, 220); 
  
+}
+
+input::placeholder {
+    color: lightgrey;
+    opacity: 1; 
+    padding-left: 10px;
 }
 
 .kortele button:hover {
@@ -84,23 +100,17 @@ body, html {
     color: lightgray;
 }
 
-input[type="text"],
-select,
-textarea {
-    border: 2px solid lightgrey;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: left;
-    height: 50px;
-}
+
 
 .pretty-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
+    
 }
 select{
     color: lightgray;
+    padding-left: 15px;
+    padding-right: 15px;
 }
